@@ -25,3 +25,12 @@ Flag 0: To find the admins password, check if the page is vulnerable to SQL inje
 Flag 1: Another way to bypass authentication is to submit a POST request to the edit page. The following command is used: ``curl -v -X POST http://35.190.155.168/21740b2c07/page/edit/4 >output.txt ``. This generates the flag in the response.
 
 Flag 2: https://medium.com/cyberx/ctf-hacker101-micro-cms-v2-f0e32696cdff
+
+## Encrypted Pastebin
+
+By altering the encypted text from the URL: ``http://35.190.155.168/ac67e0480a/?post=wQJNgLKe5MV5fbQ8Usvq2WI3NqRuqQeRW1BTMly66HzpxLvDv7yjsVS1-PXmQFIWcIigOqHaEHdiQF4Fnc4TyArm-HnvGpuyCxi2w8hvB-qlnKdO-df8YFDvR6KzLCYNmUdaPXQi8yde7BMW8LIvQF53o273-azhdlUs9ulmy-T8eUOuBhqvyj2rwtjkG49oD6fvA3C-q53gC4!36xhPA~~,``, the flag is found in the response.
+
+## Photo Gallery
+
+Flag 0: By inputting: ``/fetch?id=-1 UNION select '/../../main.py'``, this gives me the main.py file as the server is running uswgi docker. 
+
